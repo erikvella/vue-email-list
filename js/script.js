@@ -7,7 +7,7 @@ createApp({
 
       apiUrl:'https://flynn.boolean.careers/exercises/api/random/mail',
       mailGenerate: '',
-      arrMailGenerate: '',
+      arrMailGenerate: [],
     }
   },
 
