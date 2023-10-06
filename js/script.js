@@ -16,7 +16,7 @@ createApp({
     axios.get(this.apiUrl)
     .then((response)=>{
       console.log(response.data);
-      this.mailGenerate = response.data.response
+      this.arrMailGenerate.push(response.data.response)
     })
     .catch((error)=>{
       console.log(error);
@@ -28,8 +28,7 @@ createApp({
     this.getApi();
 
     for(let i = 0 ; i < 10 ; i++){
-      this.arrMailGenerate.push(response.data.response);
-      console.log(this.arrMailGenerate);
+      this.getApi();
     }
   },
 
