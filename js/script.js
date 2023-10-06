@@ -28,8 +28,8 @@ createApp({
     this.getApi();
 
     for(let i = 0 ; i < 10 ; i++){
-      this.getApi().push(this.arrMailGenerate);
-      console.log(this.arrMailGenerate)
+      this.arrMailGenerate.push(response.data.response);
+      console.log(this.arrMailGenerate);
     }
   },
 
