@@ -6,8 +6,8 @@ createApp({
     return{
 
       apiUrl:'https://flynn.boolean.careers/exercises/api/random/mail',
-  
       arrMailGenerate: [],
+      limit: 10
     }
   },
 
@@ -27,7 +27,7 @@ createApp({
   mounted(){
     this.getApi();
 
-    for(let i = 0 ; i < 10 ; i++){
+    for(let i = 0 ; i < this.limit ; i++){
       this.getApi();
     }
   },

@@ -14,12 +14,15 @@
 <body>
 
   <div id="app">
+    <h3 
+    v-if="arrMailGenerate.length < limit">Loading...</h3>
 
-    <ul>
+    <ul v-else>
       <li v-for="mail in arrMailGenerate">
         <span>{{ mail }}</span>
       </li>
     </ul>
+
 
 
 
